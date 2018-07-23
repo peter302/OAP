@@ -7,7 +7,15 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 </head>
-<body>
+<body style="background-color:#3CBC8D;text-decoration-color:color:white; white;background-size:cover;">
+  <nav class="navbar navbar-default navbar-danger" >
+    <div class="navbar-header">
+      <a class="navbar-brand">MAKE A DIFFERENCE IN YOUR POCKET</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"> <a href="index.html" target="_top">back to home page</a><li>
+      </ul>
+    </nav>
   <div class="container">
     <div class="row">
       <div class="col-md-5">
@@ -23,11 +31,12 @@ onclick="upload()"></p>
   <option value="houses">house</option>
   <option value="fruits">fruits and vegetables</option>
   <option value="land">land</option>
-  </select>
+</select>
 
 <p>item Name:<span id="t"></span></p><br>
 <p>price:<span id="e"></span></p><br>
 <p>addres:<span id="m"></span></p>
+<p>when was it bought : <input type="datetime-local" id="now"></p>
 </div>
 </div>
 <br>
@@ -35,23 +44,24 @@ onclick="upload()"></p>
   <div class="col-md-5-offset-2">
     <header>Enter the description of your item here</header>
   <form id="just" style="border:solid;padding:10px;border-color:red;">
-  <input type="text" id="inpit1" placeholder="Item Category">
+  <input type="text" id="inpit1" placeholder="Item Category"style=" background-color:orange;">
   <br>
 
   <br>
-  <input type="Item Name" id="input2" placeholder="Item Name">
+  <input type="Item Name" id="input2" placeholder="Item Name"style=" background-color:orange;">
   <br>
   <br>
-  <input type="text" id="input3" placeholder="Price">
+  <input type="text" id="input3" placeholder="Price"style=" background-color:orange;color:white;">
 
   <br>
 
   <br>
-  <input type="adress" id="input3" placeholder="addre">
+  <input type="adress" id="input3" placeholder="addres"style=" background-color:orange;">
   <br>
   <br>
   <button type="submit" class="btn btn-lg btn-success">submit</button>
 </form>
+</div>
 </div>
 </div>
 </div>
