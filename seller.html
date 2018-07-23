@@ -6,6 +6,8 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+  <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+</script>
 </head>
 <body style="background-color:#3CBC8D;text-decoration-color:color:white; white;background-size:cover;">
   <nav class="navbar navbar-default " style="background-color:#000000;" >
@@ -22,10 +24,10 @@
     <div class="row">
       <div class="col-md-5">
   <div class="canvas">
-  <canvas id="myCanvas" width="400" height="300" style="border:1px solid #000000;">
+  <canvas id="myCanvas" width="10" height="20" style="border:1px solid #000000;">
 </canvas><br>
 <p>FileName:<input type="file" multiple="false" accept="images/*" id="cool"
-onclick="upload()"></p>
+onchange="upload()"></p>
 <p>Item Category:</p>
 <p>item Name:<span id="t"></span></p><br>
 <p>price:<span id="e"></span></p><br>
@@ -71,12 +73,12 @@ onclick="upload()"></p>
 </div>
 </div>
 <script>
-$(document).ready(function(){
-  var input = $( "input:image" ).css({
-  background:"yellow",
-  border:"3px red solid"
-});
+function upload(){
+  var img=document.getElementById('myCanvas');
+  var app=document.getElementById('cool');
+  var out= new SimpleImage(app);
+  out.drawTo(img);
 }
-
+</script>
 </body>
 </html>
