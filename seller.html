@@ -8,15 +8,17 @@
   crossorigin="anonymous"></script>
 </head>
 <body style="background-color:#3CBC8D;text-decoration-color:color:white; white;background-size:cover;">
-  <nav class="navbar navbar-default navbar-danger" >
+  <nav class="navbar navbar-default " style="background-color:#000000;" >
     <div class="navbar-header">
       <a class="navbar-brand">MAKE A DIFFERENCE IN YOUR POCKET</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"> <a href="index.html" target="_top">back to home page</a><li>
+      <div class="panel" style="background-color:green;color:white;">
+      <li class="active"> <a href="index.html" target="_top" style="color:white; hover:pointer;">back to home page</a><li>
+      </div>
       </ul>
     </nav>
-  <div class="container">
+  <div class="container" style="margin:200px;">
     <div class="row">
       <div class="col-md-5">
   <div class="canvas">
@@ -24,27 +26,28 @@
 </canvas><br>
 <p>FileName:<input type="file" multiple="false" accept="images/*" id="cool"
 onclick="upload()"></p>
-<p>Item Category:<select>
-  <option value="electronics" >electronics</option>
-  <option value="clothes" class="default">clothes</option>
-  <option value="vehicles">vehicles</option>
-  <option value="houses">house</option>
-  <option value="fruits">fruits and vegetables</option>
-  <option value="land">land</option>
-</select>
-
+<p>Item Category:</p>
 <p>item Name:<span id="t"></span></p><br>
 <p>price:<span id="e"></span></p><br>
 <p>addres:<span id="m"></span></p>
-<p>when was it bought : <input type="datetime-local" id="now"></p>
+<p>manufactured date : <input type="datetime-local" id="now"></p>
 </div>
 </div>
 <br>
 <div id="info">
   <div class="col-md-5-offset-2">
     <header>Enter the description of your item here</header>
+    <div class="unity">
   <form id="just" style="border:solid;padding:10px;border-color:red;">
-  <input type="text" id="inpit1" placeholder="Item Category"style=" background-color:orange;">
+    <select>
+      <option value="electronics" >electronics</option>
+      <option value="clothes" class="default">clothes</option>
+      <option value="vehicles">vehicles</option>
+      <option value="houses">house</option>
+      <option value="fruits">fruits and vegetables</option>
+      <option value="land">land</option>
+      <option value="gadget">gadget</option>
+    </select>
   <br>
 
   <br>
@@ -66,6 +69,14 @@ onclick="upload()"></p>
 </div>
 </div>
 </div>
+</div>
+<script>
+$(document).ready(function(){
+  var input = $( "input:image" ).css({
+  background:"yellow",
+  border:"3px red solid"
+});
+}
 
 </body>
 </html>
