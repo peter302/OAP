@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+  <div class="canvas">
+  <canvas id="myCanvas" width="400" height="300" style="border:1px solid #000000;">
+</canvas><br>
+<p>FileName:<input type="file" multiple="false" accept="images/*" id="cool"
+onclick="upload()"></p>
+<p>Item Category:<select>
+  <option value="electronics" >electronics</option>
+  <option value="clothes" class="default">clothes</option>
+  <option value="vehicles">vehicles</option>
+  <option value="houses">house</option>
+  <option value="fruits">fruits and vegetables</option>
+  <option value="land">land</option>
+  </select>
+
+<p>item Name:<span id="t"></span></p><br>
+<p>price:<span id="e"></span></p><br>
+<p>addres:<span id="m"></span></p>
+</div>
+</div>
+<br>
+<div id="info">
+  <div class="col-md-5-offset-2">
+    <header>Enter the description of your item here</header>
+  <form id="just" style="border:solid;padding:10px;border-color:red;">
+  <input type="text" id="inpit1" placeholder="Item Category">
+  <br>
+
+  <br>
+  <input type="Item Name" id="input2" placeholder="Item Name">
+  <br>
+  <br>
+  <input type="text" id="input3" placeholder="Price">
+
+  <br>
+
+  <br>
+  <input type="adress" id="input3" placeholder="addre">
+  <br>
+  <br>
+  <button type="submit" class="btn btn-lg btn-success">submit</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
