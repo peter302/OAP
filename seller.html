@@ -28,11 +28,11 @@
 </canvas><br>
 <p>FileName:<input type="file" multiple="false" accept="images/*" id="cool"
 onchange="upload()"></p>
-<p>Item Category:</p>
+<p>Item Category:<span id="t1"></span></p>
 <p>item Name:<span id="t"></span></p><br>
 <p>price:<span id="e"></span></p><br>
 <p>addres:<span id="m"></span></p>
-<p>manufactured date : <input type="datetime-local" id="now"></p>
+<p>manufactured date : <span id="b"></span></p>
 </div>
 </div>
 <br>
@@ -41,7 +41,7 @@ onchange="upload()"></p>
     <header>Enter the description of your item here</header>
     <div class="unity">
   <form id="just" style="border:solid;padding:10px;border-color:red;">
-    <select>
+    <select id="input1">
       <option value="electronics" >electronics</option>
       <option value="clothes" class="default">clothes</option>
       <option value="vehicles">vehicles</option>
@@ -50,6 +50,8 @@ onchange="upload()"></p>
       <option value="land">land</option>
       <option value="gadget">gadget</option>
     </select>
+    <br>
+    <input type="month" id="now">
   <br>
 
   <br>
@@ -61,7 +63,7 @@ onchange="upload()"></p>
   <br>
 
   <br>
-  <input type="adress" id="input3" placeholder="addres"style=" background-color:orange;">
+  <input type="adress" id="input4" placeholder="addres"style=" background-color:orange;">
   <br>
   <br>
   <button type="submit" class="btn btn-lg btn-success">submit</button>
@@ -78,6 +80,21 @@ function upload(){
   var app=document.getElementById('cool');
   var out= new SimpleImage(app);
   out.drawTo(img);
+  $(document).ready(function(){
+    $("form").submit(function(event){
+      var input1=$("#input1").val()
+      var input2=$("#input2").val()
+      var input3=$("#input3").val()
+      var input4=$("#input4").val()
+      var input5=$("#now").val()
+      $("#t1").text(input1);
+      $("#t").text(input2);
+      $("#e").text(input3);
+      $("#m").text(input4);
+      $("#b").text(input5);
+
+    });
+  });
 }
 </script>
 </body>
