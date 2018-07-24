@@ -11,7 +11,7 @@
 <script src="js/scripts.js">
 </script>
 </head>
-<body style="background-color:#3CBC8D;text-decoration-color:color:white; white;background-size:cover;">
+<body style="background-color:#3CBC8D;background-image:url("images/mombasa.jpeg");">
   <nav class="navbar navbar-default " style="background-color:#000000;" >
     <div class="navbar-header">
       <a class="navbar-brand">MAKE A DIFFERENCE IN YOUR POCKET</a>
@@ -24,27 +24,14 @@
     </nav>
   <div class="container" style="margin:200px;">
     <div class="row">
-      <div class="col-md-5">
-        <div id="insert"style="background-image:url("/home/peter/Downloads/mombasa.jpeg");" >
-  <div class="canvas">
-  <canvas id="myCanvas" width="10" height="20" style="border:1px solid #000000;">
-</canvas><br>
-<p>FileName:<input type="file" multiple="false" accept="images/*" id="cool"
-onchange="upload()"></p>
-<p>Item Category:<span id="t1"></span></p>
-<p>item Name:<span id="t"></span></p><br>
-<p>price:<span id="e"></span></p><br>
-<p>addres:<span id="m"></span></p>
-<p id="y">manufactured date : <span id="b"></span></p>
-</div>
-</div>
-</div>
-<br>
 <div id="info">
   <div class="col-md-5-offset-2">
     <header>Enter the description of your item here</header>
     <div class="unity">
   <form id="just" style="border:solid;padding:10px;border-color:red;">
+<input type="file" id="cool" accept="image/*" multiple="false"onchange="upload()">
+<br>
+
     <select id="input1">
       <option value="electronics" >electronics</option>
       <option value="clothes" class="default">clothes</option>
@@ -79,6 +66,27 @@ onchange="upload()"></p>
 </div>
 </div>
 <button type="submit"id="enter" style="float:right;">continue</button>
+<div class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h>you are about to upload the following details</h>
+    </div>
+    <div class="modal-body">
+      <div class="canvas">
+      <canvas id="myCanvas" width="10" height="20" style="border:1px solid #000000;">
+    </canvas><br>
+      <p>Item Category:<span id="t1"></span></p>
+      <p>item Name:<span id="t"></span></p><br>
+      <p>price:<span id="e"></span></p><br>
+      <p>addres:<span id="m"></span></p>
+      <p id="y">manufactured date : <span id="b"></span></p>
+    </div>
+    <div class="modal-footer">
+      <button type="submit" id="weka">continue</button>
+    </div>
+  </div>
+</div>
+
 <script>
 function upload(){
   var img=document.getElementById('myCanvas');
@@ -98,14 +106,17 @@ function upload(){
       $("#e").text(input3);
       $("#m").text(input4);
       $("#b").text(input5);
+      $("form").hide();
 
     });
     $("#enter").click(function(){
-  var name = $("#input4").val();
-  var t=window.open("index.html","_self")
+  $(".modal").show();
 
 });
+$("#weka").click(function(){
+var t=window.open("index.html","_self")
   });
+});
 </script>
 </body>
 </html>
