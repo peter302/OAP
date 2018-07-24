@@ -65,8 +65,7 @@
 </div>
 </div>
 </div>
-<button type="submit"id="enter" style="float:right;">continue</button>
-<div class="modal">
+<div class="modal" style="background-color:transparent;">
   <div class="modal-content">
     <div class="modal-header">
       <h>you are about to upload the following details</h>
@@ -106,11 +105,9 @@ function upload(){
       $("#e").text(input3);
       $("#m").text(input4);
       $("#b").text(input5);
-      $("form").hide();
-
+      $(".modal").show();
     });
     $("#enter").click(function(){
-  $(".modal").show();
 
 });
 $("#weka").click(function(){
