@@ -8,6 +8,8 @@
   crossorigin="anonymous"></script>
   <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
 </script>
+<script src="js/scripts.js">
+</script>
 </head>
 <body style="background-color:#3CBC8D;text-decoration-color:color:white; white;background-size:cover;">
   <nav class="navbar navbar-default " style="background-color:#000000;" >
@@ -23,6 +25,7 @@
   <div class="container" style="margin:200px;">
     <div class="row">
       <div class="col-md-5">
+        <div id="insert"style="background-image:url("/home/peter/Downloads/mombasa.jpeg");" >
   <div class="canvas">
   <canvas id="myCanvas" width="10" height="20" style="border:1px solid #000000;">
 </canvas><br>
@@ -32,7 +35,8 @@ onchange="upload()"></p>
 <p>item Name:<span id="t"></span></p><br>
 <p>price:<span id="e"></span></p><br>
 <p>addres:<span id="m"></span></p>
-<p>manufactured date : <span id="b"></span></p>
+<p id="y">manufactured date : <span id="b"></span></p>
+</div>
 </div>
 </div>
 <br>
@@ -74,14 +78,16 @@ onchange="upload()"></p>
 </div>
 </div>
 </div>
+<button type="submit"id="enter" style="float:right;">continue</button>
 <script>
 function upload(){
   var img=document.getElementById('myCanvas');
   var app=document.getElementById('cool');
   var out= new SimpleImage(app);
-  out.drawTo(img);
+  out.drawTo(img)};
   $(document).ready(function(){
     $("form").submit(function(event){
+      event.preventDefault();
       var input1=$("#input1").val()
       var input2=$("#input2").val()
       var input3=$("#input3").val()
@@ -94,8 +100,12 @@ function upload(){
       $("#b").text(input5);
 
     });
+    $("#enter").click(function(){
+  var name = $("#input4").val();
+  var t=window.open("index.html","_self")
+
+});
   });
-}
 </script>
 </body>
 </html>
