@@ -22,4 +22,4 @@
 This project is licensed under the MIT License.
 
 ## Acknowledgments
-Google was a very useful tool and also the group of people we worked with.
+Google was a very useful tool and  the group of people we worked with.
