@@ -11,7 +11,7 @@
 <script src="js/scripts.js">
 </script>
 </head>
-<body style="background-color:#3CBC8D;background-image:url("images/mombasa.jpeg");">
+<body style="background-color:#3CBC8D;background-image:url('images/mombasa.jpeg');">
   <nav class="navbar navbar-default " style="background-color:#000000;" >
     <div class="navbar-header">
       <a class="navbar-brand">MAKE A DIFFERENCE IN YOUR POCKET</a>
@@ -65,12 +65,14 @@
 </div>
 </div>
 </div>
-<div class="modal" style="background-color:transparent;">
+<div class="modal";>
   <div class="modal-content">
     <div class="modal-header">
-      <h>you are about to upload the following details</h>
+      <button style="float:right;"class="btn btn-md-danger" data-dismiss="modal">close</button>
+      <h>you are about to upload the following details
+      </h>
     </div>
-    <div class="modal-body">
+    <div class="modal-body" style="background-image:url('dream.jpeg')">
       <div class="canvas">
       <canvas id="myCanvas" width="10" height="20" style="border:1px solid #000000;">
     </canvas><br>
@@ -80,7 +82,7 @@
       <p>addres:<span id="m"></span></p>
       <p id="y">manufactured date : <span id="b"></span></p>
     </div>
-    <div class="modal-footer">
+    <div class="modal-footer" style="color:black">
       <button type="submit" id="weka">continue</button>
     </div>
   </div>
