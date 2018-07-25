@@ -12,11 +12,11 @@
 * JavaScript
 
 ## Authors
- Daniel Gichuru
- Natasha Senah
- Nathan Momanyi
- Peter Kuria - Team Leader
- Feisal Ibrahim
+ * Daniel Gichuru
+ * Natasha Senah
+ * Nathan Momanyi
+ * Peter Kuria - Team Leader
+ * Feisal Ibrahim
 
 ## License
 This project is licensed under the MIT License.
