@@ -65,6 +65,7 @@
 </div>
 </div>
 </div>
+<div id="right" style="background-image:url('kuria.jpeg')">
 <div class="modal";>
   <div class="modal-content">
     <div class="modal-header">
@@ -87,7 +88,7 @@
     </div>
   </div>
 </div>
-
+</div>
 <script>
 function upload(){
   var img=document.getElementById('myCanvas');
@@ -109,8 +110,8 @@ function upload(){
       $("#b").text(input5);
       $(".modal").show();
     });
-    $("#enter").click(function(){
-
+    $(".btn").click(function(){
+  $(".modal").hide();
 });
 $("#weka").click(function(){
 var t=window.open("index.html","_self")
