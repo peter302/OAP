@@ -1,0 +1,96 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Vollkorn SC', serif;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+nav{
+  max-width:
+  margin-left: -100px;
+  margin-right: -100px;
+  padding:10px 0;
+
+}
+ul{
+  text-align:right;
+  border:1px solid #e7e7e7;
+  background-color: gold;
+
+}
+li{
+  display:inline-block;
+
+}
+li a{
+  text-decoration-style: wavy;
+  font-family: 'Rye', cursive;
+  font-style: oblique;
+  font-weight: bold;
+
+}
+nav>ul>li>a {
+  padding: 18px;
+  margin-right:0;
+  text-transform:uppercase;
+  text-decoration:none;
+  display:block;
+  color:rgb(0, 102, 0);
+  text-decoration-color: blue;
+}
+nav>ul>li>a:hover{
+  box-shadow:0 0 10px rgb(0, 51, 0),insert 0 0 1px rgb(0, 102, 0);
+  background:rgb(51, 153, 51));
+  color:rgb(51, 51, 0);
+}
+
+
+h1{
+  text-decoration:underline;
+  text-align: center;
+  color:purple;
+  font-family: 'Carter One', cursive;
+
+
+
+}
+
+body{
+  background-image:url("../images/kl.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+p {
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: bold;
+}

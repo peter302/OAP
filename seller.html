@@ -1,79 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
-</script>
-<script src="js/scripts.js">
-</script>
-</head>
-<body style="background-color:#008000;background-image:url('images/mombasa.jpeg');background-size:cover;">
-  <nav class="navbar navbar-default " style="background-color:#008000;" >
-    <div class="navbar-header">
-      <a class="navbar-brand">MAKE A DIFFERENCE IN YOUR POCKET</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <div class="panel" style="background-color:green;color:white;">
-      <li class="active"> <a href="index.html" target="_top" style="color:white; hover:pointer;">Home</a><li>
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+    </script>
+    <script src="js/scripts.js">
+    </script>
+  </head>
+  <body>
+    <style>
+
+    body {
+      background-image: url(images/walllpaper.jpg);
+    }
+    </style>
+    <nav class="navbar navbar-default " style="background-color:#000000;" >
+      <div class="navbar-header">
+        <a class="navbar-brand">MAKE A DIFFERENCE IN YOUR POCKET</a>
       </div>
+      <ul class="nav navbar-nav">
+        <div class="panel" style="background-color:black;color:white;">
+          <li class="active"> <a href="index.html" target="_top" style="color:white; hover:pointer;">back to home page</a><li>
+        </div>
       </ul>
     </nav>
-  <div class="container" style="margin:200px;">
-    <div class="row">
-<div id="info">
-  <div class="col-md-5-offset-2">
-    <header>Enter the description of your item here</header>
-    <div class="unity">
-  <form id="just" style="border:solid;padding:10px;border-color:red;">
-<input type="file" id="cool" accept="image/*" multiple="false"onchange="upload()">
-<br>
+    <div class="container" style="margin:50px;">
+      <div class="row">
+        <div id="info">
+          <div class="col-md-5-offset-2">
+            <header>Enter the description of your item here</header>
+            <div class="unity">
+              <form id="just">
+              <input type="file" id="cool" accept="image/*" multiple="false"onchange="upload()">
+              <br>
 
-    <select id="input1">
-      <option value="electronics" >electronics</option>
-      <option value="clothes" class="default">clothes</option>
-      <option value="vehicles">vehicles</option>
-      <option value="houses">house</option>
-      <option value="fruits">fruits and vegetables</option>
-      <option value="land">land</option>
-      <option value="gadget">gadget</option>
-    </select>
-    <br>
-    <input type="month" id="now">
-  <br>
+            <select id="input1">
+            <option value="electronics" >electronics</option>
+            <option value="clothes" class="default">clothes</option>
+            <option value="vehicles">vehicles</option>
+            <option value="houses">house</option>
+            <option value="fruits">fruits and vegetables</option>
+            <option value="land">land</option>
+            <option value="gadget">gadget</option>
+            </select>
+            <br>
+            <input type="month" id="now">
+            <br>
 
-  <br>
-  <input type="Item Name" id="input2" placeholder="Item Name"style=" background-color:orange;">
-  <br>
-  <br>
-  <input type="text" id="input3" placeholder="Price"style=" background-color:orange;color:white;">
+            <br>
+            <input type="Item Name" id="input2" placeholder="Item Name"style=" background-color:orange;">
+            <br>
+            <br>
+            <input type="text" id="input3" placeholder="Price"style=" background-color:orange;color:white;">
 
-  <br>
+            <br>
 
-  <br>
-  <input type="adress" id="input4" placeholder="addres"style=" background-color:orange;">
-  <br>
-  <br>
-  <button type="submit" class="btn btn-lg btn-success">submit</button>
-</form>
-</div>
-</div>
-</div>
-</div>
-</div>
+            <br>
+            <input type="adress" id="input4" placeholder="addres"style=" background-color:orange;">
+            <br>
+            <br>
+            <button type="submit" class="btn btn-lg btn-success">submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <div id="right" style="background-image:url('images/kuria.jpeg')">
 <div class="modal";>
   <div class="modal-content">
     <div class="modal-header">
-      <button style="float:right;"class="btn btn-md-danger" data-dismiss="modal">close</button>
-      <h>you are about to upload the following details
-      </h>
+      <h>you are about to upload the following details</h>
     </div>
-    <div class="modal-body" style="background-image:url('dream.jpeg')">
+    <div class="modal-body">
+
       <div class="canvas">
       <canvas id="myCanvas" width="10" height="20" style="border:1px solid #000000;">
     </canvas><br>
@@ -83,6 +89,8 @@
       <p>addres:<span id="m"></span></p>
       <p id="y">manufactured date : <span id="b"></span></p>
     </div>
+
+    <div class="modal-footer">
     <div class="modal-footer" style="color:black">
       <button type="submit" id="weka">continue</button>
     </div>
@@ -114,7 +122,7 @@ function upload(){
   $(".modal").hide();
 });
 $("#weka").click(function(){
-var t=window.open("index.html","_self")
+var t=window.open("buyer.html","_self")
   });
 });
 </script>
