@@ -240,9 +240,15 @@ body{
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  width: 990px;
 
 }
 p {
   font-family: 'Fredericka the Great', cursive;
   font-weight: bold;
 }
+@@media query {
+
+}
+a:visited {
+    color: pink;}

@@ -17,15 +17,16 @@
 
     body {
       background-image: url(images/walllpaper.jpg);
+      background-size: cover;
     }
     </style>
-    <nav class="navbar navbar-default " style="background-color:#000000;" >
-      <div class="navbar-header">
+    <nav class="navbar navbar-default " style="background-color:#008000; margin-right:-310px;" >
         <a class="navbar-brand">MAKE A DIFFERENCE IN YOUR POCKET</a>
       </div>
       <ul class="nav navbar-nav">
-        <div class="panel" style="background-color:black;color:white;">
-          <li class="active"> <a href="index.html" target="_top" style="color:white; hover:pointer;">back to home page</a><li>
+        <div class="panel" style="background-color:#008000;color:white;">
+          <li class="active"> <a href="index.html" target="_top" style="color:white;;">Home</a><li><br>
+          <li class="ahem"><a href="buyer.html" style="color:white;">Sell</a><li>
         </div>
       </ul>
     </nav>
@@ -73,10 +74,12 @@
   </div>
 </div>
 <div id="right" style="background-image:url('images/kuria.jpeg')">
-<div class="modal";>
+<div class="modal">
   <div class="modal-content">
     <div class="modal-header">
-      <h>you are about to upload the following details</h>
+      <div class="navbar-header">
+        <button class="width" type="submit" style="color:orange;background-color:red;opacity:0.7"><span class="glyphicon glyphicon-remove"></span>close</button>
+      <h style="color:blue;">you are about to upload the following details</h>
     </div>
     <div class="modal-body">
 
@@ -119,10 +122,13 @@ function upload(){
       $(".modal").show();
     });
     $(".btn").click(function(){
-  $(".modal").hide();
+  $(".modal").show();
 });
 $("#weka").click(function(){
-var t=window.open("buyer.html","_self")
+window.open("index.html","_self")
+  });
+  $(".width").click(function(){
+    $(".modal").hide();
   });
 });
 </script>
